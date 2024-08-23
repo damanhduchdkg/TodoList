@@ -1,0 +1,61 @@
+:root {
+  --btn-color: #ccc;
+  --btn-hover-color: #c4e8fa;
+  --main-color: #5be9f9;
+  --bg-color: #bbbbbb;
+  --text-color: #614cff;
+}
+
+.title {
+  margin: 2rem 0;
+}
+
+.taskItem {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.taskCheckbox {
+  flex: 0 0 10%;
+  max-width: 10%;
+  height: 2rem;
+  // margin-top: 0.5rem;
+}
+
+.taskName {
+  flex: 0 0 70%;
+  max-width: 70%;
+  // padding: 0 0 0.5rem;
+  color: var(--text-color);
+  &.taskNameDone {
+    color: var(--btn-color);
+    text-decoration: line-through;
+  }
+}
+
+.taskActions {
+  flex: 0 0 20%;
+  max-width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.taskBtn {
+  flex: 0 0 3.5rem;
+  max-width: 3.5rem;
+  // height: 2.5rem;
+  font-size: 1.5rem;
+  border: 1px solid var(--btn-color);
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  opacity: 0.6;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+    border-color: var(--bg-color);
+    // background-color: var(--btn-hover-color);
+  }
+}
